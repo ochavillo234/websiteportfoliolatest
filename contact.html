@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>リカ (Rica)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Add inside <head> -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+    body {
+      font-family: 'Noto Serif JP', serif;
+      background-color: #FAF9F6; /* soft off-white */
+      color: #333;
+    }
+    /* subtle underline animation on nav links */
+    nav a {
+      position: relative;
+      padding-bottom: 4px;
+      text-decoration: none;
+      color: #555;
+      transition: color 0.3s;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #B33A3A;
+      transition: width 0.3s;
+    }
+    nav a:hover {
+      color: #B33A3A;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header class="fixed top-0 left-0 w-full bg-white border-b border-gray-300 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold tracking-wide text-[#B33A3A] select-none">リカ ザルディビア</h1>
+    <nav class="hidden md:flex space-x-8 text-sm font-medium">
+      <a href="index.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="challenges.html">Challenges</a>
+      <a href="future.html">Future</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden text-3xl text-[#B33A3A]" aria-label="Toggle Menu">☰</button>
+  </div>
+  <nav id="mobileMenu" class="md:hidden max-w-6xl mx-auto px-6 py-4 hidden border-t border-gray-200 bg-white">
+    <ul class="flex flex-col space-y-3 text-base font-medium">
+      <li><a href="index.html" class="block">About</a></li>
+      <li><a href="skills.html" class="block">Skills</a></li>
+      <li><a href="projects.html" class="block">Projects</a></li>
+      <li><a href="challenges.html" class="block">Challenges</a></li>
+      <li><a href="future.html" class="block">Future</a></li>
+      <li><a href="resume.html" class="block">Resume</a></li>
+      <li><a href="contact.html" class="block">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="flex-grow max-w-6xl mx-auto px-6 mt-16 py-16">
+  <div class="text-center">
+    <h2 class="text-xl sm:text-3xl font-bold text-[#B33A3A] mb-4">
+      お問い合わせ (Contact)
+    </h2>
+
+    <p class="mb-12 text-gray-700 max-w-xl mx-auto text-sm sm:text-base">
+      Feel free to reach out to me with any questions, project inquiries, or just to say hello. I’m happy to connect and will respond as soon as possible.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-14">
+
+    <!-- Contact Info + Social -->
+    <section class="space-y-10 text-sm sm:text-base">
+      <div>
+        <h3 class="text-lg md:text-xl font-semibold mb-5 border-b-2 border-[#B33A3A] inline-block">Get in Touch</h3>
+        <ul class="space-y-5 text-gray-700">
+          <li class="flex items-center space-x-4">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#B33A3A]" fill="currentColor" viewBox="0 0 24 24"><path d="M2 5v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5H2zm18 0v2l-8 5-8-5V5h16zm-9 7L4 7v10h16V7l-7 5z"/></svg>
+            <a href="mailto:bc.ricamay.zaldivia@cvsu.edu.ph" class="hover:underline" aria-label="Send Email">bc.ricamay.zaldivia@cvsu.edu.ph</a>
+          </li>
+          <li class="flex items-center space-x-4">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#B33A3A]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 13.06 13.06 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 13.06 13.06 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:09459761505" class="hover:underline" aria-label="Call Phone Number">(+63)945-9761-505</a>
+          </li>
+          <li class="flex items-center space-x-4">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#B33A3A]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zM12 11.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            <span>Anabu 1-A, Imus City, Cavite</span>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg md:text-xl font-semibold mb-5 border-b-2 border-[#B33A3A] inline-block">Follow Me</h3>
+        <div class="flex space-x-8">
+          <a href="https://www.facebook.com/ricazaldiviaaa" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-[#3b5998] hover:text-[#B33A3A] transition">
+            <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-6.99h-2.54v-2.89h2.54v-2.2c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.25c-1.23 0-1.61.77-1.61 1.56v1.87h2.74l-.44 2.89h-2.3v6.99C18.34 21.13 22 17 22 12z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/ricazaldiviaaa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-[#E1306C] hover:text-[#B33A3A] transition">
+            <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5a3.75 3.75 0 0 0 3.75-3.75v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5zm8.5 2.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+          </a>
+          <a href="https://github.com/ricazaldiviaaa" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-gray-800 hover:text-[#B33A3A] transition">
+            <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.18 6.84 9.5.5.09.68-.22.68-.5 0-.25-.01-.91-.01-1.79-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.48-1.1-1.48-.9-.62.07-.6.07-.6 1 .07 1.52 1.03 1.52 1.03.89 1.52 2.34 1.08 2.9.83.09-.65.35-1.08.64-1.33-2.22-.25-4.56-1.12-4.56-4.97 0-1.1.39-2 1.03-2.7-.1-.25-.45-1.28.1-2.67 0 0 .84-.27 2.75 1.03A9.58 9.58 0 0 1 12 6.8c.85.004 1.7.11 2.5.32 1.9-1.3 2.74-1.03 2.74-1.03.56 1.39.21 2.42.11 2.67.64.7 1.03 1.6 1.03 2.7 0 3.86-2.35 4.72-4.59 4.97.36.31.67.93.67 1.88 0 1.36-.01 2.45-.01 2.79 0 .28.18.6.69.5A10.02 10.02 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Message Form -->
+    <section>
+ <form id="contactForm" action="#" method="POST" class="space-y-8 text-sm sm:text-base">
+
+        <div>
+          <label for="name" class="text-md md:text-sm font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block">Name<span class="text-red-500">*</span></label>
+          <input type="text" id="name" name="name" required
+            class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#B33A3A]" placeholder="What's your name?" />
+        </div>
+
+        <div>
+          <label for="email" class="text-md md:text-sm font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block">Email Address<span class="text-red-500">*</span></label>
+          <input type="email" id="email" name="_replyto" required
+            class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#B33A3A]" placeholder="youremail@example.com" />
+        </div>
+
+        <div>
+          <label for="message" class="text-md md:text-sm font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block">Message<span class="text-red-500">*</span></label>
+          <textarea id="message" name="message" rows="6" required
+            class="w-full px-4 py-3 border border-gray-300 rounded-md resize-y focus:outline-none focus:ring-2 focus:ring-[#B33A3A]" placeholder="Your message here"></textarea>
+        </div>
+
+        <button type="submit"
+          class="bg-[#B33A3A] text-white font-semibold px-6 py-3 rounded-md hover:bg-[#7f2525] transition w-full md:w-auto">Send</button>
+      </form>
+    </section>
+
+  </div>
+</main>
+
+<footer class="mt-5 py-6 text-center text-sm text-gray-500 select-none">
+  © 2025 リカ ザルディビア - All Rights Reserved.
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  const contactForm = document.getElementById('contactForm');
+
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault(); // prevent actual submission
+
+    Swal.fire({
+      title: 'Are you sure?',
+      text: 'Do you want to send this message?',
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonColor: '#B33A3A',
+      cancelButtonColor: '#aaa',
+      confirmButtonText: 'Yes, send it!',
+      cancelButtonText: 'Cancel'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: 'Sent!',
+          text: 'Your message has been "sent" successfully.',
+          icon: 'success',
+          confirmButtonColor: '#B33A3A'
+        }).then(() => {
+          contactForm.reset(); // clear the form inputs
+        });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

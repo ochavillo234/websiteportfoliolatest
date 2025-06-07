@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>リカ (Rica)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+    body {
+      font-family: 'Noto Serif JP', serif;
+      background-color: #FAF9F6; /* soft off-white */
+      color: #333;
+    }
+    /* subtle underline animation on nav links */
+    nav a {
+      position: relative;
+      padding-bottom: 4px;
+      text-decoration: none;
+      color: #555;
+      transition: color 0.3s;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #B33A3A;
+      transition: width 0.3s;
+    }
+    nav a:hover {
+      color: #B33A3A;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header class="fixed top-0 left-0 w-full bg-white border-b border-gray-300 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold tracking-wide text-[#B33A3A] select-none">リカ ザルディビア</h1>
+    <nav class="hidden md:flex space-x-8 text-sm font-medium">
+      <a href="index.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="challenges.html">Challenges</a>
+      <a href="future.html">Future</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden text-3xl text-[#B33A3A]" aria-label="Toggle Menu">☰</button>
+  </div>
+  <nav id="mobileMenu" class="md:hidden max-w-6xl mx-auto px-6 py-4 hidden border-t border-gray-200 bg-white">
+    <ul class="flex flex-col space-y-3 text-base font-medium">
+      <li><a href="index.html" class="block">About</a></li>
+      <li><a href="skills.html" class="block">Skills</a></li>
+      <li><a href="projects.html" class="block">Projects</a></li>
+      <li><a href="challenges.html" class="block">Challenges</a></li>
+      <li><a href="future.html" class="block">Future</a></li>
+      <li><a href="resume.html" class="block">Resume</a></li>
+      <li><a href="contact.html" class="block">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="pt-28 px-4 max-w-6xl mx-auto">
+  <div class="flex flex-col items-center text-center mb-10">
+    <h2 class="text-2xl md:text-3xl font-bold text-[#B33A3A] mb-4">将来の計画 (Future Plans)</h2>
+    <p class="text-xs md:text-sm text-gray-600 max-w-md">
+      My aspirations for the future span across professional growth, continued education, and meaningful living.
+    </p>
+  </div>
+
+  <section class="mb-10">
+    <h3 class="text-lg md:text-xl font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block">キャリアの目標（Career Goals）</h3>
+    <p class="text-sm md:text-base text-gray-700 leading-relaxed">
+      I aim to grow into a confident and skilled software developer, focusing on full-stack web development.
+      In the coming years, I hope to join a company that values creativity and innovation while also exploring
+      opportunities to contribute to impactful open-source projects. One of my long-term goals is to lead
+      a development team and mentor junior developers.
+    </p>
+  </section>
+
+  <section class="mb-10">
+    <h3 class="text-lg md:text-xl font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block">継続的な学習（Lifelong Learning）</h3>
+    <p class="text-sm md:text-base text-gray-700 leading-relaxed">
+      Technology never stops evolving, so I plan to continue learning new frameworks, tools, and languages.
+      I intend to pursue certifications, attend tech conferences, and participate in online communities.
+      Embracing curiosity and being a continuous learner is a value I hold deeply.
+    </p>
+  </section>
+
+  <section>
+    <h3 class="text-lg md:text-xl font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block">個人の成長（Personal Development）</h3>
+    <p class="text-sm md:text-base text-gray-700 leading-relaxed">
+      Outside of tech, I plan to nurture emotional intelligence, improve time management, and build strong relationships.
+      I believe that balancing career with mental well-being and healthy habits is essential to living a meaningful life.
+      Giving back to my community and inspiring others will also be part of my journey.
+    </p>
+  </section>
+</main>
+
+
+<footer class="mt-20 py-6 text-center text-sm text-gray-500 select-none">
+  © 2025 リカ ザルディビア - All Rights Reserved.
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>

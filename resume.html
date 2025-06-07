@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>リカ (Rica)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+    body {
+      font-family: 'Noto Serif JP', serif;
+      background-color: #FAF9F6; /* soft off-white */
+      color: #333;
+    }
+    /* subtle underline animation on nav links */
+    nav a {
+      position: relative;
+      padding-bottom: 4px;
+      text-decoration: none;
+      color: #555;
+      transition: color 0.3s;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #B33A3A;
+      transition: width 0.3s;
+    }
+    nav a:hover {
+      color: #B33A3A;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header class="fixed top-0 left-0 w-full bg-white border-b border-gray-300 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold tracking-wide text-[#B33A3A] select-none">リカ ザルディビア</h1>
+    <nav class="hidden md:flex space-x-8 text-sm font-medium">
+      <a href="index.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="challenges.html">Challenges</a>
+      <a href="future.html">Future</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden text-3xl text-[#B33A3A]" aria-label="Toggle Menu">☰</button>
+  </div>
+  <nav id="mobileMenu" class="md:hidden max-w-6xl mx-auto px-6 py-4 hidden border-t border-gray-200 bg-white">
+    <ul class="flex flex-col space-y-3 text-base font-medium">
+      <li><a href="index.html" class="block">About</a></li>
+      <li><a href="skills.html" class="block">Skills</a></li>
+      <li><a href="projects.html" class="block">Projects</a></li>
+      <li><a href="challenges.html" class="block">Challenges</a></li>
+      <li><a href="future.html" class="block">Future</a></li>
+      <li><a href="resume.html" class="block">Resume</a></li>
+      <li><a href="contact.html" class="block">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="flex-grow max-w-6xl mx-auto px-6 py-12 rounded-lg mt-16">
+  <header class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-10">
+    <h2 class="text-2xl sm:text-3xl font-bold text-[#B33A3A] mb-6 sm:mb-0">履歴書 (Resume)</h2>
+    <a href="assets/CurriculumVitae.pdf" download
+       class="inline-block bg-[#B33A3A] hover:bg-[#922C2C] text-white px-4 sm:px-6 py-2 rounded-md text-xs sm:text-sm font-semibold transition"
+       aria-label="Download CV">Download CV</a>
+  </header>
+
+  <section class="space-y-12 text-gray-800 text-sm sm:text-base leading-relaxed">
+    <!-- Objective -->
+    <section>
+      <h3 class="text-lg md:text-xl font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block"> 目的 (Objective)</h3>
+      <p>
+        Motivated Computer Science student with a passion for web development and problem-solving, seeking opportunities to apply and expand my skills through hands-on projects or internships.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h3 class="text-lg md:text-xl font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block">技術スキル (Technical Skills)</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Programming:</strong> Python, Java, and JavaScript</li>
+        <li><strong>Web:</strong> HTML, CSS, React, and Node.js</li>
+        <li><strong>Database:</strong> MySQL</li>
+        <li><strong>Tools:</strong> Git, VS Code, and Figma</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h3 class="text-lg md:text-xl font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block">プロジェクト (Projects)</h3>
+
+      <article class="mb-6">
+        <p class="font-semibold">Enrollment System</p>
+        <p class="italic text-gray-600 mb-1 text-xs sm:text-sm">Frontend Developer</p>
+        <p>We created an Enrollment System Website where the process for all types of students who want to enroll in CVSU Bacoor Campus is managed.</p>
+        <p><strong>Technologies Used:</strong> React, Tailwind, MySQL, and Node.js</p>
+        <p>Project Site(s): <a href="https://cvsu-bacoor-enrollment.vercel.app" target="_blank" rel="noopener noreferrer" class="text-[#B33A3A] hover:underline">cvsu-bacoor-enrollment.vercel.app</a></p>
+      </article>
+
+      <article>
+        <p class="font-semibold">Website Portfolio</p>
+        <p class="italic text-gray-600 mb-1 text-xs sm:text-sm">Frontend Developer</p>
+        <p>I created a professional Website Portfolio to showcase my projects and skills.</p>
+        <p><strong>Technologies Used:</strong> React and Tailwind</p>
+        <p>Project Site(s): <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-[#B33A3A] hover:underline">github.com/yourusername</a></p>
+      </article>
+    </section>
+  </section>
+</main>
+
+
+<footer class="mt-5 py-6 text-center text-sm text-gray-500 select-none">
+  © 2025 リカ ザルディビア - All Rights Reserved.
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html> 

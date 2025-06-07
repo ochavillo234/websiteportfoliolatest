@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>リカ (Rica)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+    body {
+      font-family: 'Noto Serif JP', serif;
+      background-color: #FAF9F6; /* soft off-white */
+      color: #333;
+    }
+    /* subtle underline animation on nav links */
+    nav a {
+      position: relative;
+      padding-bottom: 4px;
+      text-decoration: none;
+      color: #555;
+      transition: color 0.3s;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #B33A3A;
+      transition: width 0.3s;
+    }
+    nav a:hover {
+      color: #B33A3A;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header class="fixed top-0 left-0 w-full bg-white border-b border-gray-300 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold tracking-wide text-[#B33A3A] select-none">リカ ザルディビア</h1>
+    <nav class="hidden md:flex space-x-8 text-sm font-medium">
+      <a href="index.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="challenges.html">Challenges</a>
+      <a href="future.html">Future</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden text-3xl text-[#B33A3A]" aria-label="Toggle Menu">☰</button>
+  </div>
+  <nav id="mobileMenu" class="md:hidden max-w-6xl mx-auto px-6 py-4 hidden border-t border-gray-200 bg-white">
+    <ul class="flex flex-col space-y-3 text-base font-medium">
+      <li><a href="index.html" class="block">About</a></li>
+      <li><a href="skills.html" class="block">Skills</a></li>
+      <li><a href="projects.html" class="block">Projects</a></li>
+      <li><a href="challenges.html" class="block">Challenges</a></li>
+      <li><a href="future.html" class="block">Future</a></li>
+      <li><a href="resume.html" class="block">Resume</a></li>
+      <li><a href="contact.html" class="block">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="pt-24 px-6 max-w-6xl mx-auto w-full">
+  <div class="flex flex-col md:flex-row gap-10 items-center text">
+    <!-- Profile Info Card -->
+    <aside class="flex flex-col items-center md:items-start md:w-64 p-6 border border-red-200 rounded-lg">
+      <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-[#B33A3A]  mb-6">
+        <img 
+          src="assets/rica.jpg" 
+          alt="Profile Photo"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <h2 class="text-md md:text-lg font-bold mb-4 tracking-wide border-b-2 border-[#B33A3A] inline-block">関連情報 (Relevant Information)</h2>
+      <ul class="space-y-3 text-gray-700 text-left text-xs md:text-sm">
+        <li class="flex items-center gap-3">
+          <span class="text-red-500 text-xs md:text-sm"></span>
+          <span>My name is Rica May I. Zaldivia from BSCS 3-4. I’m currently pursuing a Bachelor of Science in Computer Science at Cavite State University – Bacoor Campus.</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="text-red-500 text-lg md:text-xl"></span>
+          <span>I’m passionate about creativity and learning, and I stay disciplined and goal-oriented in everything I do.</span>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main Text Content -->
+    <section class="flex-1">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-[#B33A3A] tracking-wide text-center">自己紹介 (Self Introduction)</h2>
+
+      <div class="mb-8">
+        <h3 class="text-lg md:text-xl font-semibold mb-3 text-gray-800 border-b-2 border-[#B33A3A] inline-block">The Real Me</h3>
+        <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-4">Aside from academics, I enjoy a variety of hobbies and interests that keep me inspired and balanced.</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 max-w-xl text-sm md:text-base">
+          <li>Reading books</li>
+          <li>Watching movies and series</li>
+          <li>Exploring designs</li>
+          <li>Learning steps of dance</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg md:text-xl font-semibold mb-3 text-gray-800 border-b-2 border-[#B33A3A] inline-block">Family Background</h3>
+        <p class="text-sm md:text-base text-gray-700 leading-relaxed max-w-xl">I come from a supportive family that inspires me to grow and pursue my dreams while staying grounded and humble.</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+
+<footer class="mt-5 py-6 text-center text-sm text-gray-500 select-none">
+  © 2025 リカ ザルディビア - All Rights Reserved.
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
