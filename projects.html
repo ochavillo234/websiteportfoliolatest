@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>リカ (Rica)</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
@@ -42,7 +43,7 @@
 
 <header class="fixed top-0 left-0 w-full bg-white border-b border-gray-300 z-50">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold tracking-wide text-[#B33A3A] select-none">リカ ザルディビア</h1>
+    <h1 class="text-md md:text-2xl font-bold tracking-wide text-[#B33A3A] select-none">リカ (Rica)</h1>
     <nav class="hidden md:flex space-x-8 text-sm font-medium">
       <a href="index.html">About</a>
       <a href="skills.html">Skills</a>
@@ -67,9 +68,9 @@
   </nav>
 </header>
 
-<main class="pt-28 px-4 max-w-6xl mx-auto">
+<main class="pt-24 px-4 max-w-6xl mx-auto">
   <div class="flex flex-col items-center justify-center text-center mb-10 px-2 sm:px-0">
-    <h2 class="text-2xl sm:text-3xl font-bold text-[#B33A3A] mb-3">プロジェクト (Projects)</h2>
+    <h2 class="text-xl sm:text-3xl font-bold text-[#B33A3A] mb-3">プロジェクト (Projects)</h2>
     <p class="text-xs sm:text-sm text-gray-600 max-w-md">
       A showcase of my key works that highlight my skills, creativity, and growth.
     </p>
@@ -78,18 +79,12 @@
   <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
     <!-- Project 1 -->
     <article class="bg-[#F5F1E9] rounded-xl shadow-sm p-5 sm:p-6 hover:shadow-md transition duration-300 flex flex-col items-center text-center" aria-labelledby="project1-title" role="group">
-      <!-- 1.1.4. Project overview snapshot -->
       <img src="assets/b&b.png" alt="Bean & Brew" class="rounded-lg mb-4 w-full max-w-md object-cover" />
-
-      <!-- 1.1.1. Project Name -->
-      <h3 id="project1-title" class="text-lg md:text-xl font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">Bean & Brew</h3>
-
-      <!-- 1.1.2. Description -->
-      <p class="text-sm sm:text-base text-gray-700 mb-4 max-w-md" tabindex="0">
-        A coffee shop reservation website where user can book an advance sit for special occasions. This is for only user/client and admin.
+      <h3 id="project1-title" class="text-sm sm:text-base font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">Bean & Brew</h3>
+      <p class="text-xs sm:text-sm text-gray-700 mb-4 max-w-md" tabindex="0">
+        his website enables clients to reserve seats in advance at a coffee shop for special occasions such as birthdays, anniversaries, or meetings. It includes two roles: the user/client who can make reservations, and the admin who manages bookings and availability.
       </p>
 
-      <!-- 1.1.3. Technologies & Tools Used -->
       <div class="flex justify-center space-x-3 mb-4" aria-label="Technologies and tools used in Project 1">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
         <img src="assets/tailwind.png" alt="Tailwind CSS Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
@@ -97,9 +92,7 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
 
-      <!-- 1.1.5. Link [GitHub or Live Demo] -->
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://live-demo-link.com/project1" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 1">Live Demo</a>
         <a href="https://github.com/belle-designer/CoffeeShopReservation" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 1 on GitHub">Code</a>
       </div>
     </article>
@@ -107,9 +100,9 @@
     <!-- Project 2 -->
     <article class="bg-[#F5F1E9] rounded-xl shadow-sm p-5 sm:p-6 hover:shadow-md transition duration-300 flex flex-col items-center text-center" aria-labelledby="project2-title" role="group">
       <img src="assets/CurricuLink.png" alt="CurricuLink" class="rounded-lg mb-4 w-full max-w-md object-cover" />
-      <h3 id="project2-title" class="text-lg md:text-xl font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">Curriculink</h3>
-      <p class="text-sm sm:text-base text-gray-700 mb-4 max-w-md" tabindex="0">
-        A website that for centralized curriculum. Users are educators and admin.
+      <h3 id="project2-title" class="text-sm sm:text-base font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">Curriculink</h3>
+      <p class="text-xs sm:text-sm text-gray-700 mb-4 max-w-md" tabindex="0">
+        This website provides a centralized platform for managing and accessing curriculum content. It is intended for use by educators to view and update materials, and by administrators to oversee and manage curriculum structure.
       </p>
       <div class="flex justify-center space-x-3 mb-4" aria-label="Technologies and tools used in Project 1">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
@@ -118,77 +111,103 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://live-demo-link.com/project2" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
         <a href="https://github.com/belle-designer/CMS" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
       </div>
     </article>
 
-        <!-- Project 3 -->
+    
+    <!-- Project 3 -->
     <article class="bg-[#F5F1E9] rounded-xl shadow-sm p-5 sm:p-6 hover:shadow-md transition duration-300 flex flex-col items-center text-center" aria-labelledby="project2-title" role="group">
-      <img src="assets/ESG.png" alt="Enrollemnt System" class="rounded-lg mb-4 w-full max-w-md object-cover" />
-      <h3 id="project2-title" class="text-lg md:text-xl font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">Enrollment System fo CvSU Bacoor Campus</h3>
-      <p class="text-sm sm:text-base text-gray-700 mb-4 max-w-md" tabindex="0">
-        A final project website for all enrollee of CvSU Bacoor Campus.
+      <img src="assets/dtc.jpg" alt="Dodge the Creeps" class="rounded-lg mb-4 w-full max-w-md object-cover" />
+      <h3 id="project2-title" class="text-sm sm:text-base font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">Dodge the Creeps</h3>
+      <p class="text-xs sm:text-sm text-gray-700 mb-4 max-w-md" tabindex="0">
+        My first game application, titled Dodge the Creeps, developed using the Godot engine. It challenges players to avoid incoming obstacles while testing their reflexes and agility.
       </p>
       <div class="flex justify-center space-x-3 mb-4" aria-label="Technologies and tools used in Project 1">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
-        <img src="assets/tailwind.png" alt="Tailwind CSS Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" alt="Godot Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://live-demo-link.com/project2" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
-        <a href="https://github.com/ricazaldiviaaa/EnrollmentSystem" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+        <a href="https://github.com/ricazaldiviaaa/Dodge-the-Creeps" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
       </div>
     </article>
 
-            <!-- Project 4 -->
+    <!-- Project 4 -->
     <article class="bg-[#F5F1E9] rounded-xl shadow-sm p-5 sm:p-6 hover:shadow-md transition duration-300 flex flex-col items-center text-center" aria-labelledby="project2-title" role="group">
       <img src="assets/WebPortfolio.png" alt="Website Portfolio" class="rounded-lg mb-4 w-full max-w-md object-cover" />
-      <h3 id="project2-title" class="text-lg md:text-xl font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">Enrollment System fo CvSU Bacoor Campus</h3>
-      <p class="text-sm sm:text-base text-gray-700 mb-4 max-w-md" tabindex="0">
-        My first website portfolio I created.
+      <h3 id="project2-title" class="text-sm sm:text-base font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">Website Portofolio</h3>
+      <p class="text-xs sm:text-sm text-gray-700 mb-4 max-w-md" tabindex="0">
+        This is my very first website portfolio, showcasing my skills and projects.
       </p>
       <div class="flex justify-center space-x-3 mb-4" aria-label="Technologies and tools used in Project 1">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
-        <img src="assets/tailwind.png" alt="Tailwind CSS Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://live-demo-link.com/project2" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
-        <a href="https://github.com/ricazaldiviaaa/EnrollmentSystem" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+        <a href="https://ricazaldiviaaa.github.io/WebsitePortfolio/" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
+        <a href="https://github.com/ricazaldiviaaa/WebsitePortfolio" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
       </div>
     </article>
 
-            <!-- Project 5 -->
+    <!-- Project 5 -->
     <article class="bg-[#F5F1E9] rounded-xl shadow-sm p-5 sm:p-6 hover:shadow-md transition duration-300 flex flex-col items-center text-center" aria-labelledby="project2-title" role="group">
       <img src="assets/fmo.png" alt="FMOA" class="rounded-lg mb-4 w-full max-w-md object-cover" />
-      <h3 id="project2-title" class="text-lg md:text-xl font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">Enrollment System fo CvSU Bacoor Campus</h3>
-      <p class="text-sm sm:text-base text-gray-700 mb-4 max-w-md" tabindex="0">
-        My appreciation website for my love.
+      <h3 id="project2-title" class="text-sm sm:text-base font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">Our Aeon</h3>
+      <p class="text-xs sm:text-sm text-gray-700 mb-4 max-w-md" tabindex="0">
+        A website to hold our memories — a special place for us as a couple to cherish every moment together.
       </p>
       <div class="flex justify-center space-x-3 mb-4" aria-label="Technologies and tools used in Project 1">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
         <img src="assets/tailwind.png" alt="Tailwind CSS Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://live-demo-link.com/project2" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
-        <a href="https://github.com/ricazaldiviaaa/EnrollmentSystem" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+        <a href="https://ricazaldiviaaa.github.io/FullMoonofAugust/" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
+        <a href="https://github.com/ricazaldiviaaa/FullMoonofAugust" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
       </div>
     </article>
 
-            <!-- Project 3 -->
+            <!-- Project 6 -->
+    <article class="bg-[#F5F1E9] rounded-xl shadow-sm p-5 sm:p-6 hover:shadow-md transition duration-300 flex flex-col items-center text-center" aria-labelledby="project2-title" role="group">
+      <img src="assets/1975.png" alt="The 1975" class="rounded-lg mb-4 w-full max-w-md object-cover" />
+      <h3 id="project2-title" class="text-sm sm:text-base font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">The 1975</h3>
+      <p class="text-xs sm:text-sm text-gray-700 mb-4 max-w-md" tabindex="0">
+        This is the first website page I created during my 1st year, with a design inspired by my favorite band, The 1975.
+      </p>
+      <div class="flex justify-center space-x-3 mb-4" aria-label="Technologies and tools used in Project 1">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+      </div>
+      <div class="flex space-x-3 sm:space-x-4">
+        <a href="https://ricazaldiviaaa.github.io/1975/" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
+        <a href="https://github.com/ricazaldiviaaa/1975" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+      </div>
+    </article>
+
+    <!-- Project 7 -->
+    <article class="bg-[#F5F1E9] rounded-xl shadow-sm p-5 sm:p-6 hover:shadow-md transition duration-300 flex flex-col items-center text-center" aria-labelledby="project2-title" role="group">
+      <img src="assets/rica.png" alt="Website Portfolio II" class="rounded-lg mb-4 w-full max-w-md object-cover" />
+      <h3 id="project2-title" class="text-sm sm:text-base font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">リカ (Rica)</h3>
+      <p class="text-xs sm:text-sm text-gray-700 mb-4 max-w-md" tabindex="0">
+        This is the second website portfolio I created, featuring a Japanese-inspired design that incorporates traditional aesthetics with modern web design principles. The site showcases my skills in layout, typography, and responsive design, while reflecting the subtle elegance and minimalism characteristic of Japanese culture.
+      </p>
+      <div class="flex justify-center space-x-3 mb-4" aria-label="Technologies and tools used in Project 1">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+      </div>
+      <div class="flex space-x-3 sm:space-x-4">
+        <a href="https://belle-designer.github.io/websiteportfolio/" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
+        <a href="https://github.com/belle-designer/websiteportfolio" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+      </div>
+    </article>
+
+    <!-- Project 8 -->
     <article class="bg-[#F5F1E9] rounded-xl shadow-sm p-5 sm:p-6 hover:shadow-md transition duration-300 flex flex-col items-center text-center" aria-labelledby="project2-title" role="group">
       <img src="assets/ESG.png" alt="Enrollemnt System" class="rounded-lg mb-4 w-full max-w-md object-cover" />
-      <h3 id="project2-title" class="text-lg md:text-xl font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">Enrollment System fo CvSU Bacoor Campus</h3>
-      <p class="text-sm sm:text-base text-gray-700 mb-4 max-w-md" tabindex="0">
-        A final project website for all enrollee of CvSU Bacoor Campus.
+      <h3 id="project2-title" class="text-sm sm:text-base font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">Enrollment System fo CvSU Bacoor Campus</h3>
+      <p class="text-xs sm:text-sm text-gray-700 mb-4 max-w-md" tabindex="0">
+        This is a final project website developed for CvSU Bacoor Campus to facilitate student enrollment. Students can submit their enrollment requests, and faculty members have the ability to review, accept, or decline those requests. This system is designed to minimize the workload involved in traditional enrollment processes by digitizing and streamlining the entire workflow.
       </p>
       <div class="flex justify-center space-x-3 mb-4" aria-label="Technologies and tools used in Project 1">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
@@ -198,18 +217,36 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://live-demo-link.com/project2" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
+        <a href="https://cvsu-bacoor-enrollment.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
         <a href="https://github.com/ricazaldiviaaa/EnrollmentSystem" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
       </div>
     </article>
 
-    <!-- Add more projects following the same pattern -->
+    <!-- Project 9 -->
+    <article class="bg-[#F5F1E9] rounded-xl shadow-sm p-5 sm:p-6 hover:shadow-md transition duration-300 flex flex-col items-center text-center" aria-labelledby="project2-title" role="group">
+      <img src="assets/ecommerce.png" alt="E-commerce" class="rounded-lg mb-4 w-full max-w-md object-cover" />
+      <h3 id="project2-title" class="text-sm sm:text-base font-semibold mb-2 border-b-2 border-[#B33A3A] inline-block" tabindex="0">E-Commerce</h3>
+      <p class="text-xs sm:text-sm text-gray-700 mb-4 max-w-md" tabindex="0">
+        FFinal Website Project: This is an online shop/e-commerce website designed to provide users with a seamless and user-friendly shopping experience. The platform will feature product browsing, detailed product pages, shopping cart functionality, and secure checkout options. The photo above is only a sample, as the project is still under development and many features are being added and refined to ensure a smooth and efficient user journey.
+      </p>
+      <div class="flex justify-center space-x-3 mb-4" aria-label="Technologies and tools used in Project 1">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+        <img src="assets/tailwind.png" alt="Tailwind CSS Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
+      </div>
+      <div class="flex space-x-3 sm:space-x-4">
+        <a href="" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+      </div>
+    </article>
+
   </section>
 </main>
 
 
-<footer class="mt-20 py-6 text-center text-sm text-gray-500 select-none">
-  © 2025 リカ ザルディビア - All Rights Reserved.
+<footer class="mt-5 py-6 text-center text-sm text-gray-500 select-none">
+  © 2025 リカ (Rica) - All Rights Reserved.
 </footer>
 
 <script>
