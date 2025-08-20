@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>リカ (Rica)</title>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
     body {
@@ -93,7 +94,7 @@
       </div>
 
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://github.com/belle-designer/CoffeeShopReservation" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 1 on GitHub">Code</a>
+        <a href="https://github.com/belle-designer/CoffeeShopReservation" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 1 on GitHub">Code</a>
       </div>
     </article>
 
@@ -111,7 +112,7 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://github.com/belle-designer/CMS" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+        <a href="https://github.com/belle-designer/CMS" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
       </div>
     </article>
 
@@ -127,7 +128,7 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" alt="Godot Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://github.com/ricazaldiviaaa/Dodge-the-Creeps" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+        <a href="https://github.com/ricazaldiviaaa/Dodge-the-Creeps" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
       </div>
     </article>
 
@@ -144,8 +145,20 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://ricazaldiviaaa.github.io/WebsitePortfolio/" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
-        <a href="https://github.com/ricazaldiviaaa/WebsitePortfolio" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+        <!-- Locked Live Demo Button -->
+<a id="liveDemoLink" href="#"
+   class="inline-flex items-center justify-center bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm font-semibold transition cursor-not-allowed w-full sm:w-auto text-center"
+   aria-label="Live Demo (Locked)">
+  
+  <!-- Lock SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 sm:w-5 sm:h-5 mr-2" viewBox="0 -960 960 960" fill="currentColor">
+    <path d="M720-240q25 0 42.5-17.5T780-300q0-25-17.5-42.5T720-360q-25 0-42.5 17.5T660-300q0 25 17.5 42.5T720-240Zm0 120q30 0 56-14t43-39q-23-14-48-20.5t-51-6.5q-26 0-51 6.5T621-173q17 25 43 39t56 14ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM490-80H240q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v52q-18-6-37.5-9t-42.5-3v-40H240v400h212q8 24 16 41.5T490-80Zm230 40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40ZM240-560v400-400Z"/>
+  </svg>
+  
+  Live Demo (Locked)
+</a>
+
+        <a href="https://github.com/ricazaldiviaaa/WebsitePortfolio" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
       </div>
     </article>
 
@@ -161,8 +174,8 @@
         <img src="assets/tailwind.png" alt="Tailwind CSS Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://ricazaldiviaaa.github.io/FullMoonofAugust/" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
-        <a href="https://github.com/ricazaldiviaaa/FullMoonofAugust" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+        <a href="https://ouraeon.vercel.app/" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
+        <a href="https://github.com/ricazaldiviaaa/FullMoonofAugust" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
       </div>
     </article>
 
@@ -179,8 +192,8 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://ricazaldiviaaa.github.io/1975/" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
-        <a href="https://github.com/ricazaldiviaaa/1975" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+        <a href="https://ricazaldiviaaa.github.io/1975/" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
+        <a href="https://github.com/ricazaldiviaaa/1975" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
       </div>
     </article>
 
@@ -199,8 +212,8 @@
         <img src="https://raw.githubusercontent.com/sweetalert2/sweetalert2/HEAD/assets/swal2-logo.png" alt="sweetalert2 Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://belle-designer.github.io/websiteportfolio/" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
-        <a href="https://github.com/belle-designer/websiteportfolio" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+        <a href="https://ricazaldiviaaa.vercel.app/" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
+        <a href="https://github.com/belle-designer/websiteportfolio" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
       </div>
     </article>
 
@@ -219,8 +232,8 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://cvsu-bacoor-enrollment.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
-        <a href="https://github.com/ricazaldiviaaa/EnrollmentSystem" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+        <a href="https://cvsu-bacoor-enrollment.vercel.app/" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
+        <a href="https://github.com/ricazaldiviaaa/EnrollmentSystem" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
       </div>
     </article>
 
@@ -239,8 +252,8 @@
         <img src="https://raw.githubusercontent.com/sweetalert2/sweetalert2/HEAD/assets/swal2-logo.png" alt="sweetalert2 Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://ecommerce-tau-dusky-46.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
-        <a href="" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+        <a href="https://ecommerce-tau-dusky-46.vercel.app/" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
+        <a href="https://github.com/ochavillo234/Ecommerce" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
       </div>
     </article>
 
@@ -259,8 +272,8 @@
         <img src="https://raw.githubusercontent.com/sweetalert2/sweetalert2/HEAD/assets/swal2-logo.png" alt="sweetalert2 Logo" class="h-5 sm:h-6 w-5 sm:w-6" />
       </div>
       <div class="flex space-x-3 sm:space-x-4">
-        <a href="https://fiestahut.vercel.app/  " target="_blank" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
-        <a href="" target="_blank" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
+        <a href="https://fiestahut.vercel.app/" rel="noopener noreferrer" class="bg-[#B33A3A] hover:bg-[#922C2C] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Live demo of Project 2">Live Demo</a>
+        <a href="https://github.com/ochavillo234/FiestaHut" rel="noopener noreferrer" class="border border-[#B33A3A] hover:bg-[#F9EAE1] text-[#B33A3A] px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition" aria-label="Source code for Project 2 on GitHub">Code</a>
       </div>
     </article>
 
@@ -271,6 +284,19 @@
 <footer class="mt-5 py-6 text-center text-sm text-gray-500 select-none">
   © 2025 リカ (Rica) - All Rights Reserved.
 </footer>
+
+<script>
+  // SweetAlert on click
+  document.getElementById("liveDemoLink").addEventListener("click", function(e) {
+    e.preventDefault();
+    Swal.fire({
+      icon: 'info',
+      title: 'Access Locked',
+      text: 'Contact the owner.',
+      confirmButtonColor: '#B33A3A'
+    });
+  });
+</script>
 
 <script>
   const menuBtn = document.getElementById('menuBtn');
